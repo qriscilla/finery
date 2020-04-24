@@ -1,0 +1,16 @@
+.app {
+  height: 100vh;
+}
+
+.nav {
+  height: 63px;
+}
+
+.nav__tab {
+  margin: 5%;
+}
+
+.footer {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
