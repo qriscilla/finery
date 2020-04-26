@@ -101,13 +101,13 @@ export default function PersistentDrawerLeft() {
 
         <List>
           <ListItem>
-            <Link to='/clothes' style={{color:'black',textDecoration:'none'}}>clothes</Link>
+            <Link to='/finery/clothes' style={{color:'black',textDecoration:'none'}}>clothes</Link>
           </ListItem>
           <ListItem>
-            <Link to='/shoes' style={{color:'black',textDecoration:'none'}}>shoes</Link>
+            <Link to='/finery/shoes' style={{color:'black',textDecoration:'none'}}>shoes</Link>
           </ListItem>
           <ListItem>
-            <Link to='/accessories' style={{color:'black',textDecoration:'none'}}>accessories</Link>
+            <Link to='/finery/accessories' style={{color:'black',textDecoration:'none'}}>accessories</Link>
           </ListItem>
         </List>
 
@@ -115,13 +115,13 @@ export default function PersistentDrawerLeft() {
 
         <List>
           <ListItem>
-            <Link to='/' style={{color:'black',textDecoration:'none'}}>search</Link>
+            <Link to='/finery' style={{color:'black',textDecoration:'none'}}>search</Link>
           </ListItem>
           <ListItem>
-            <Link to='/' style={{color:'black',textDecoration:'none'}}>log in / sign up</Link>
+            <Link to='/finery' style={{color:'black',textDecoration:'none'}}>log in / sign up</Link>
           </ListItem>
           <ListItem>
-            <Link to='/' style={{color:'black',textDecoration:'none'}}>cart</Link>
+            <Link to='/finery' style={{color:'black',textDecoration:'none'}}>cart</Link>
           </ListItem>
         </List>
       </Drawer>
