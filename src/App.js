@@ -4,6 +4,9 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import Nav from './components/Nav';
 import Home from './components/pages/Home';
+import Clothes from './components/pages/Clothes';
+import Shoes from './components/pages/Shoes';
+import Accessories from './components/pages/Accessories';
 import Footer from './components/Footer';
 
 function App() {
@@ -16,6 +19,9 @@ function App() {
         <Grid item container justify='center' className='app__body'>
           <Switch>
             <Route path='/' exact component={Home} />
+            <Route path='/clothes' exact component={Clothes} />
+            <Route path='/shoes' exact component={Shoes} />
+            <Route path='/accessories' exact component={Accessories} />
           </Switch>              
         </Grid>
 

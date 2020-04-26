@@ -1,14 +1,24 @@
 import React from 'react';
-import Grid from '@material-ui/core/Grid';
+import { makeStyles, useTheme } from '@material-ui/core/styles';
+import Drawer from '@material-ui/core/Drawer';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
+import List from '@material-ui/core/List';
+import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
-import { makeStyles } from '@material-ui/core/styles';
 import MenuIcon from '@material-ui/icons/Menu';
+import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
+import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+import ListItem from '@material-ui/core/ListItem';
+import { Link } from 'react-router-dom';
+import Grid from '@material-ui/core/Grid';
 import twig from '../images/twig.png';
 
 const useStyles = makeStyles((theme) => ({
   root: {
+    display: 'flex',
+  },
+  appbar: {
     flexGrow: 1,
     color: 'black',
     background: 'transparent',
@@ -16,81 +26,106 @@ const useStyles = makeStyles((theme) => ({
   },
   menuButton: {
     marginRight: theme.spacing(2),
-    [theme.breakpoints.up('sm')]: {
+    [theme.breakpoints.up('md')]: {
         display: 'none',
     },
   },
   title: {
     flexGrow: 1,
     display: 'none',
-    [theme.breakpoints.up('sm')]: {
+    [theme.breakpoints.up('md')]: {
       display: 'block',
     },
   },
 }));
 
-export default function Nav() {
+export default function PersistentDrawerLeft() {
   const classes = useStyles();
+  const theme = useTheme();
+  const [open, setOpen] = React.useState(false);
+
+  const handleDrawerOpen = () => {
+    setOpen(true);
+  };
+
+  const handleDrawerClose = () => {
+    setOpen(false);
+  };
 
   return (
-      <AppBar position="static" className={classes.root}>
-        <Toolbar>
+    <div className={classes.root}>
 
+      <AppBar position="static" className={classes.appbar}>
+        <Toolbar>
           <IconButton
-            edge="start"
-            className={classes.menuButton}
             color="inherit"
             aria-label="open drawer"
+            onClick={handleDrawerOpen}
+            edge="start"
+            className={classes.menuButton}
           >
             <MenuIcon />
           </IconButton>
 
-            <Grid container>
-                <Grid item container xs={3} sm={4} style={{textAlign:'right'}}>
-                    <h5 className={classes.title}>clothing</h5>
-                    <h5 className={classes.title}>shoes</h5>
-                    <h5 className={classes.title}>accessories</h5>
-                </Grid>
-                <Grid item xs={4} sm={4} style={{textAlign:'center'}}>
-                    <h3><img src={twig} alt={twig} style={{width:'25px', position:'block'}} />finery</h3>
-                </Grid>
-                <Grid item container sm={4}>
-                    <h5 className={classes.title}>search</h5>
-                    <h5 className={classes.title}>log in / sign up</h5>
-                    <h5 className={classes.title}>cart</h5>
-                </Grid>
-            </Grid>
+          <Grid container>
+              <Grid item container xs={3} sm={4} style={{textAlign:'right'}}>
+                <h5 className={classes.title}><Link to='/clothes' style={{color:'black',textDecoration:'none'}}>clothes</Link></h5>
+                <h5 className={classes.title}><Link to='/shoes' style={{color:'black',textDecoration:'none'}}>shoes</Link></h5>
+                <h5 className={classes.title}><Link to='/accessories' style={{color:'black',textDecoration:'none'}}>accessories</Link></h5>
+              </Grid>
+              <Grid item xs={4} sm={4} style={{textAlign:'center'}}>
+                <h3><Link to='/' style={{color:'black',textDecoration:'none'}}><img src={twig} alt={twig} style={{width:'25px', position:'block'}} />finery</Link></h3>
+              </Grid>
+              <Grid item container sm={4}>
+                <h5 className={classes.title}><Link to='/' style={{color:'black',textDecoration:'none'}}>search</Link></h5>
+                <h5 className={classes.title}><Link to='/' style={{color:'black',textDecoration:'none'}}>sign in / up</Link></h5>
+                <h5 className={classes.title}><Link to='/' style={{color:'black',textDecoration:'none'}}>cart</Link></h5>
+              </Grid>
+          </Grid>
 
         </Toolbar>
+
       </AppBar>
+
+      <Drawer
+        anchor="top"
+        open={open}
+      >
+        <div>
+          <IconButton onClick={handleDrawerClose}>
+            {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
+          </IconButton>
+        </div>
+
+        <Divider />
+
+        <List>
+          <ListItem>
+            <Link to='/clothes' style={{color:'black',textDecoration:'none'}}>clothes</Link>
+          </ListItem>
+          <ListItem>
+            <Link to='/shoes' style={{color:'black',textDecoration:'none'}}>shoes</Link>
+          </ListItem>
+          <ListItem>
+            <Link to='/accessories' style={{color:'black',textDecoration:'none'}}>accessories</Link>
+          </ListItem>
+        </List>
+
+        <Divider />
+
+        <List>
+          <ListItem>
+            <Link to='/' style={{color:'black',textDecoration:'none'}}>search</Link>
+          </ListItem>
+          <ListItem>
+            <Link to='/' style={{color:'black',textDecoration:'none'}}>log in / sign up</Link>
+          </ListItem>
+          <ListItem>
+            <Link to='/' style={{color:'black',textDecoration:'none'}}>cart</Link>
+          </ListItem>
+        </List>
+      </Drawer>
+
+    </div>
   );
 }
-
-// import React from 'react';
-// import Grid from '@material-ui/core/Grid';
-
-// function Nav() {
-//     return(
-//         <Grid container>
-
-//             <Grid item container xs={5} sm={4} justify='flex-end' alignContent='center'>
-//                 <h5 className='nav__tab'>clothing</h5>
-//                 <h5 className='nav__tab'>shoes</h5>
-//                 <h5 className='nav__tab'>accessories</h5>
-//             </Grid>
-
-//             <Grid item xs={2} sm={4} style={{textAlign:'center'}}>
-//                 <h3>finery</h3>
-//             </Grid>
-
-//             <Grid item xs={5} container sm={4} justify='flex-start' alignContent='center'>
-//                 <h5 className='nav__tab'>search</h5>
-//                 <h5 className='nav__tab'>log in</h5>
-//                 <h5 className='nav__tab'>cart</h5>
-//             </Grid>
-
-//         </Grid>
-//     );
-// }
-
-// export default Nav;
