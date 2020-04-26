@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/finery/static/css/main.ffdc8217.chunk.css",
+    "main.js": "/finery/static/js/main.2ef538a5.chunk.js",
+    "main.js.map": "/finery/static/js/main.2ef538a5.chunk.js.map",
+    "runtime-main.js": "/finery/static/js/runtime-main.81d58245.js",
+    "runtime-main.js.map": "/finery/static/js/runtime-main.81d58245.js.map",
+    "static/js/2.5044d90c.chunk.js": "/finery/static/js/2.5044d90c.chunk.js",
+    "static/js/2.5044d90c.chunk.js.map": "/finery/static/js/2.5044d90c.chunk.js.map",
+    "index.html": "/finery/index.html",
+    "precache-manifest.4e906a8e5c6726f331f830a3648123ea.js": "/finery/precache-manifest.4e906a8e5c6726f331f830a3648123ea.js",
+    "service-worker.js": "/finery/service-worker.js",
+    "static/css/main.ffdc8217.chunk.css.map": "/finery/static/css/main.ffdc8217.chunk.css.map",
+    "static/js/2.5044d90c.chunk.js.LICENSE.txt": "/finery/static/js/2.5044d90c.chunk.js.LICENSE.txt",
+    "static/media/storefront1.png": "/finery/static/media/storefront1.8653b0fc.png",
+    "static/media/storefront2.png": "/finery/static/media/storefront2.a7404d77.png",
+    "static/media/twig.png": "/finery/static/media/twig.f799143b.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.81d58245.js",
+    "static/js/2.5044d90c.chunk.js",
+    "static/css/main.ffdc8217.chunk.css",
+    "static/js/main.2ef538a5.chunk.js"
+  ]
+}
