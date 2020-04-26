@@ -18,10 +18,10 @@ function App() {
 
         <Grid item container justify='center' className='app__body'>
           <Switch>
-            <Route path='/' exact component={Home} />
-            <Route path='/clothes' exact component={Clothes} />
-            <Route path='/shoes' exact component={Shoes} />
-            <Route path='/accessories' exact component={Accessories} />
+            <Route path='/finery' exact component={Home} />
+            <Route path='/finery/clothes' exact component={Clothes} />
+            <Route path='/finery/shoes' exact component={Shoes} />
+            <Route path='/finery/accessories' exact component={Accessories} />
           </Switch>              
         </Grid>
 
