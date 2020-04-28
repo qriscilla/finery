@@ -1,28 +1,33 @@
 {
   "files": {
     "main.css": "/finery/static/css/main.ffdc8217.chunk.css",
-    "main.js": "/finery/static/js/main.58b897ba.chunk.js",
-    "main.js.map": "/finery/static/js/main.58b897ba.chunk.js.map",
+    "main.js": "/finery/static/js/main.4cae14ed.chunk.js",
+    "main.js.map": "/finery/static/js/main.4cae14ed.chunk.js.map",
     "runtime-main.js": "/finery/static/js/runtime-main.81d58245.js",
     "runtime-main.js.map": "/finery/static/js/runtime-main.81d58245.js.map",
-    "static/js/2.24df4555.chunk.js": "/finery/static/js/2.24df4555.chunk.js",
-    "static/js/2.24df4555.chunk.js.map": "/finery/static/js/2.24df4555.chunk.js.map",
+    "static/js/2.fafa8a8d.chunk.js": "/finery/static/js/2.fafa8a8d.chunk.js",
+    "static/js/2.fafa8a8d.chunk.js.map": "/finery/static/js/2.fafa8a8d.chunk.js.map",
     "index.html": "/finery/index.html",
-    "precache-manifest.875069a552c67c0e3b64b691605d72b4.js": "/finery/precache-manifest.875069a552c67c0e3b64b691605d72b4.js",
+    "precache-manifest.c73face67f24782e1a05f2b39044b034.js": "/finery/precache-manifest.c73face67f24782e1a05f2b39044b034.js",
     "service-worker.js": "/finery/service-worker.js",
     "static/css/main.ffdc8217.chunk.css.map": "/finery/static/css/main.ffdc8217.chunk.css.map",
-    "static/js/2.24df4555.chunk.js.LICENSE.txt": "/finery/static/js/2.24df4555.chunk.js.LICENSE.txt",
+    "static/js/2.fafa8a8d.chunk.js.LICENSE.txt": "/finery/static/js/2.fafa8a8d.chunk.js.LICENSE.txt",
+    "static/media/Backpack.png": "/finery/static/media/Backpack.3da68f44.png",
+    "static/media/Cashmere.png": "/finery/static/media/Cashmere.ac4ac971.png",
+    "static/media/Cheeky.png": "/finery/static/media/Cheeky.de34d09a.png",
+    "static/media/Heel.png": "/finery/static/media/Heel.13472fb3.png",
+    "static/media/Jacket.png": "/finery/static/media/Jacket.7e2822f4.png",
     "static/media/Mini.png": "/finery/static/media/Mini.dff62321.png",
     "static/media/Rain.png": "/finery/static/media/Rain.ca784d33.png",
     "static/media/Storefront1.png": "/finery/static/media/Storefront1.8653b0fc.png",
     "static/media/Storefront2.png": "/finery/static/media/Storefront2.a7404d77.png",
-    "static/media/Turtleneck.png": "/finery/static/media/Turtleneck.f5ae579a.png",
-    "static/media/twig.png": "/finery/static/media/twig.f799143b.png"
+    "static/media/Straight.png": "/finery/static/media/Straight.9d41a227.png",
+    "static/media/Turtleneck.png": "/finery/static/media/Turtleneck.f5ae579a.png"
   },
   "entrypoints": [
     "static/js/runtime-main.81d58245.js",
-    "static/js/2.24df4555.chunk.js",
+    "static/js/2.fafa8a8d.chunk.js",
     "static/css/main.ffdc8217.chunk.css",
-    "static/js/main.58b897ba.chunk.js"
+    "static/js/main.4cae14ed.chunk.js"
   ]
 }

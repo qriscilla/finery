@@ -1,0 +1,70 @@
+self.__precacheManifest = (self.__precacheManifest || []).concat([
+  {
+    "revision": "6dc5bc0b89761de8e24c817676f8fdcb",
+    "url": "/finery/index.html"
+  },
+  {
+    "revision": "889c1f3f8b44bfb27364",
+    "url": "/finery/static/css/main.ffdc8217.chunk.css"
+  },
+  {
+    "revision": "9cceac145ecdb4578466",
+    "url": "/finery/static/js/2.fafa8a8d.chunk.js"
+  },
+  {
+    "revision": "0749163b59fbee32225059cb60c18af6",
+    "url": "/finery/static/js/2.fafa8a8d.chunk.js.LICENSE.txt"
+  },
+  {
+    "revision": "889c1f3f8b44bfb27364",
+    "url": "/finery/static/js/main.4cae14ed.chunk.js"
+  },
+  {
+    "revision": "b0d272b5491f9284896c",
+    "url": "/finery/static/js/runtime-main.81d58245.js"
+  },
+  {
+    "revision": "3da68f44932d80f71a0140e19d11aff5",
+    "url": "/finery/static/media/Backpack.3da68f44.png"
+  },
+  {
+    "revision": "ac4ac9711de52ca0210b5699cff4f4b0",
+    "url": "/finery/static/media/Cashmere.ac4ac971.png"
+  },
+  {
+    "revision": "de34d09a923a22b7680aa98a3bafaec1",
+    "url": "/finery/static/media/Cheeky.de34d09a.png"
+  },
+  {
+    "revision": "13472fb3fb2fdc877b2a9037fc718a69",
+    "url": "/finery/static/media/Heel.13472fb3.png"
+  },
+  {
+    "revision": "7e2822f49105a2ccf55d8b8bb29d63a8",
+    "url": "/finery/static/media/Jacket.7e2822f4.png"
+  },
+  {
+    "revision": "dff62321434d7bf03bbc0c04c5fa7083",
+    "url": "/finery/static/media/Mini.dff62321.png"
+  },
+  {
+    "revision": "ca784d337ec05a6debc40729e3e28cf8",
+    "url": "/finery/static/media/Rain.ca784d33.png"
+  },
+  {
+    "revision": "8653b0fca146b14b18bbc8ac865f3eff",
+    "url": "/finery/static/media/Storefront1.8653b0fc.png"
+  },
+  {
+    "revision": "a7404d778aaad34cb9123aba5d2b284b",
+    "url": "/finery/static/media/Storefront2.a7404d77.png"
+  },
+  {
+    "revision": "9d41a22752a3bb4b8d6cd71f759c2e5b",
+    "url": "/finery/static/media/Straight.9d41a227.png"
+  },
+  {
+    "revision": "f5ae579a31f9f58cd692e03f58f497a8",
+    "url": "/finery/static/media/Turtleneck.f5ae579a.png"
+  }
+]);
