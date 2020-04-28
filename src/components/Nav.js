@@ -78,7 +78,7 @@ export default function PersistentDrawerLeft() {
             {/* Categories */}
             <Grid item container xs={3} sm={5} className={classes.large}>
               <ul className="menu">
-                <li>
+                <li className='clothes'>
                   <div className="menu-category"><Link to="/finery/clothes">Clothing</Link></div>
                   <ul className="dropdown">
                       <li className="sublink"><Link to="/finery/clothes/tops">Tops</Link></li>
@@ -86,14 +86,14 @@ export default function PersistentDrawerLeft() {
                       <li className="sublink"><Link to="/finery/clothes/outer">Outer</Link></li>
                   </ul>
                 </li>
-                <li>
+                <li className='shoes'>
                   <div className="menu-category"><Link to="/finery/shoes">Shoes</Link></div>
                   <ul className="dropdown">
                       <li className="sublink"><Link to="/finery/shoes/boots">Boots</Link></li>
                       <li className="sublink"><Link to="/finery/shoes/heels">Heels</Link></li>
                   </ul>
                 </li>
-                <li>
+                <li className='accessories'>
                   <div className="menu-category"><Link to="/finery/accessories">Accessories</Link></div>
                   <ul className="dropdown">
                       <li className="sublink"><Link to="/finery/accessories/bags">Bags</Link></li>
@@ -103,23 +103,23 @@ export default function PersistentDrawerLeft() {
             </Grid>
 
             {/* Logo */}
-            <Grid item container xs={11} sm={2} style={{textAlign:'center'}}>
-              <h5 style={{flexGrow:'1',fontSize:'12px',display:'block'}}><Link to='/finery' style={{color:'black',textDecoration:'none',border:'2px solid black',padding:'3px 3px 3px 3px'}}>FINERY</Link></h5>
+            <Grid item container xs={10} sm={2} style={{textAlign:'center'}}>
+              <h5 style={{flexGrow:'1',fontSize:'12px',display:'block'}}><Link to='/finery' style={{color:'black',textDecoration:'none',border:'3px solid black',padding:'3px 3px 3px 3px', fontWeight:'bold', fontSize:'14px'}}>FINERY</Link></h5>
             </Grid>
 
-              <Grid item container sm={5} className={classes.large}>
-              <ul className="menu">
-                <li>
-                  <div className="menu-category"><Link to="/">SEARCH</Link></div>
-                </li>
-                <li>
-                  <div className="menu-category"><Link to="/">SIGN IN/UP</Link></div>
-                </li>
-                <li>
-                  <div className="menu-category"><Link to="/">CART</Link></div>
-                </li>
-              </ul> 
-              </Grid>
+            <Grid item container sm={5} className={classes.large}>
+            <ul className="menu">
+              <li>
+                <div className="menu-category"><Link to="/">SEARCH</Link></div>
+              </li>
+              <li>
+                <div className="menu-category"><Link to="/">SIGN IN/UP</Link></div>
+              </li>
+              <li>
+                <div className="menu-category"><Link to="/">CART</Link></div>
+              </li>
+            </ul> 
+            </Grid>
 
               {/* <Grid item container xs={3} sm={4} style={{textAlign:'right'}}>
                 <h5 className={classes.title}><Link to='/finery/clothes' style={{color:'black',textDecoration:'none',backgroundImage:'linear-gradient(180deg,transparent 50%,hsla(0,0%,77.3%,.5) 0)'}}>CLOTHES</Link></h5>

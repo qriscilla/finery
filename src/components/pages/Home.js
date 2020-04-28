@@ -26,8 +26,11 @@ const storefrontOverlay = {
     top: '35%',
     width: '100%',
     fontSize: '7vw',
-    color: 'rgb(230,230,230)',
-    fontWeight: 'bold'
+    color: 'black',
+    fontWeight: 'bold',
+}
+const storefrontText = {
+    backgroundImage: 'linear-gradient(180deg,transparent 50%,hsla(0,0%,77.3%,.5) 0)'
 }
 
 // Styling: Category
@@ -44,7 +47,7 @@ const categoryP = {
     fontSize: '1.9rem',
     fontWeight: 'bold',
     marginTop: '-50px',
-    color: 'rgb(230,230,230)'
+    color: 'white'
 }
 const categorySpan = {
     backgroundColor: 'black'
@@ -64,7 +67,7 @@ function Home() {
                     <img src={Storefront2} alt={Storefront2} style={storefrontImage} />                
                 </Grid>
             </Grid>
-            <p style={storefrontOverlay}>Modern basics for lifewear</p>                
+            <p style={storefrontOverlay}><span style={storefrontText}>Modern basics for lifewear</span></p>                
 
             {/* Categories */}
             <Grid item container style={categories}>
