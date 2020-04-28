@@ -9,7 +9,9 @@ const footer = {
     fontWeight: 'bold',
 }
 const portfolio = {
-    color: 'black'
+    color: 'black',
+    textDecoration: 'none',
+    backgroundImage: 'linear-gradient(180deg,transparent 50%,hsla(0,0%,77.3%,.5) 0)'
 }
 // const ul = {
 //     listStyleType: 'none',
