@@ -13,3 +13,102 @@
 .footer {
   font-size: 14px;
 }
+
+.navbar {
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.nav-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand-logo {
+  display: flex;
+  justify-content: flex-start;
+  padding: 15px;
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu li {
+  margin-right: 30px;
+}
+
+.menu a {
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* Sub-menu */
+ul.menu {
+  background-color: #000000;
+  font-size: .85em;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+ul.menu li a {
+  display: block; 
+  background-color: #000000;
+}
+
+ul.menu > li:hover {
+  background-color: #000000;
+}
+
+ul.menu li a:hover {
+  border-bottom: none;
+}
+
+ul.menu > li {
+  display: inline-block; 
+  position: relative; 
+}
+
+ul.menu > li ul {
+  display: none; 
+  position: absolute; 
+  left: -1px;
+  width: 125px;
+  margin-top: 1px;
+}
+
+ul.menu > li:hover ul {
+  display: block;
+}
+
+ul.menu > li ul li {
+  display: block;
+}
+
+.dropdown {
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  padding-top: 30px;
+  padding-left: 0px;
+  background-color: #000000;
+}
+
+.sublink {
+  background-color: #000000;
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-bottom: 20px;
+  font-size: .85em;
+}
