@@ -14,7 +14,7 @@ function App() {
     <Router>
       <Grid container className='app'>
 
-        <Grid item xs={12} className='nav'><Nav /></Grid>
+        <Grid item xs={12}><Nav /></Grid>
 
         <Grid item container justify='center' className='app__body'>
           <Switch>

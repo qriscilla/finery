@@ -2,10 +2,6 @@
   height: 100vh;
 }
 
-.nav {
-  height: 60px;
-}
-
 .nav__tab {
   margin: 5%;
 }
@@ -15,12 +11,10 @@
 }
 
 /* Nav */
-
+.nav {
+  display: flex;
+}
 .menu {
-  /* display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center; */
   display: flex;
   align-items: stretch; /* Default */
   justify-content: space-between;
@@ -29,71 +23,74 @@
   margin: 0;
   padding-left: 10%;
   padding-right: 10%;
-  margin-top: 18px;
+  margin-top: 22px;
+  background-color: #000000;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: .1em;
+}
+.dropdown {
+  position: absolute;
+  z-index: 1000;
+  padding-top: 30px;
+  padding-bottom: 6px;
+  padding-left: 0px;
+  background-color: #000000;
+}
+.dropdownLinks {
+  background-color: #000000;
+  padding-left: 15px;
+  padding-bottom: 10px;
+  font-size: .85em;
+  padding-top: 9px;
+}
+.clothes .dropdownLinks:hover {
+  border: 2px solid white;
+  margin-left: 4px;
+  height: 6px;
+  width: 77%;
+}
+.shoes .dropdownLinks:hover {
+  border: 2px solid white;
+  height: 6px;
+  margin-left: 4px;
+  width: 73%;
+}
+.accessories .dropdownLinks:hover {
+  border: 2px solid white;
+  margin-left: 4px;
+  height: 6px;
+  width: 79%;
 }
 .menu li {
-  /* margin-right: 30px; */
-  display: block;
-  flex: 0 1 auto; /* Default */
-  list-style-type: none;
   padding-top: 2px;
+}
+.menu > li:hover ul, li ul li {
+  display: block;
 }
 .menu a {
   color: white;
   font-weight: bold;
-  text-transform: uppercase;
   text-decoration: none;
 }
-ul.menu {
-  background-color: #000000;
-  font-size: .85em;
-  font-weight: 600;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-}
-ul.menu > li {
-  display: inline-block; 
-  position: relative; 
-}
-ul.menu > li.clothes ul {
+.clothes ul {
   margin-left: -19px;
   display: none; 
   position: absolute; 
   width: 120px;
   margin-top: 1px;
 }
-ul.menu > li.shoes ul {
+.shoes ul {
   margin-left: -20px;
   display: none; 
   position: absolute; 
   width: 100px;
-  margin-top: 1px;
+  margin-top: 1px;  
 }
-ul.menu > li.accessories ul {
-  margin-left: -6px;
+.accessories ul {
+  margin-left: -10px;
   display: none; 
   position: absolute; 
   width: 125px;
-  margin-top: 1px;
-}
-ul.menu > li:hover ul {
-  display: block;
-}
-ul.menu > li ul li {
-  display: block;
-}
-
-.dropdown {
-  position: absolute;
-  z-index: 1000;
-  padding-top: 30px;
-  padding-left: 0px;
-  padding-bottom: 10px;
-  background-color: #000000;
-}
-.sublink {
-  background-color: #000000;
-  padding-left: 15px;
-  padding-bottom: 10px;
-  font-size: .85em;
+  margin-top: 1px;  
 }
