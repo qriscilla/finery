@@ -4,7 +4,7 @@ import Drawer from '@material-ui/core/Drawer';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import List from '@material-ui/core/List';
-import Divider from '@material-ui/core/Divider';
+// import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
@@ -13,7 +13,7 @@ import ListItem from '@material-ui/core/ListItem';
 import { Link } from 'react-router-dom';
 import Grid from '@material-ui/core/Grid';
 
-export default function Nav() {
+function Nav() {
 
   // AppBar Styles and Collapse Theme
   const useStyles = makeStyles((theme) => ({
@@ -31,6 +31,18 @@ export default function Nav() {
       display: 'none',
       [theme.breakpoints.up('md')]: {
         display: 'block',
+      },
+    },
+    listItem: {
+      color:'black',
+      textDecoration:'none',
+      fontWeight:'bold',
+      fontSize:'14px',
+      "&:hover": {
+        backgroundImage: 'linear-gradient(180deg,transparent 50%,hsla(0,0%,77.3%,.5) 0)'
+      },
+      "&:focus": {
+        backgroundImage: 'linear-gradient(180deg,transparent 50%,hsla(0,0%,77.3%,.5) 0)'
       },
     }
   }));
@@ -95,7 +107,7 @@ export default function Nav() {
               </ul> 
             </Grid>
             {/* Logo */}
-            <Grid item container xs={12} sm={12} md={2} justify='center'>
+            <Grid item container xs={11} sm={12} md={2} justify='center'>
               <h5><Link to='/finery' style={logo}>FINERY</Link></h5>
             </Grid>
             {/* Dashboard */}
@@ -111,36 +123,42 @@ export default function Nav() {
       </AppBar>
 
       <Drawer anchor='top' open={open}>
-        <div>
-          <IconButton onClick={handleDrawerClose}>
-            {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
-          </IconButton>
-        </div>
-        <Divider />
+        <Grid container>
+          <Grid item xs={1}> 
+            <IconButton onClick={handleDrawerClose} color='inherit' style={{marginTop:'10px',marginLeft:'10px'}}>
+              {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
+            </IconButton>
+          </Grid>
+          <Grid item container xs={10} justify='center'>
+            <h5><Link to='/finery' style={logo}>FINERY</Link></h5>
+          </Grid>
+        </Grid>
+
         <List>
           <ListItem>
-            <Link to='/finery/clothes' style={{color:'black',textDecoration:'none'}}>clothes</Link>
+            <Link to='/finery/clothes' className={classes.listItem}>CLOTHES</Link>
           </ListItem>
           <ListItem>
-            <Link to='/finery/shoes' style={{color:'black',textDecoration:'none'}}>shoes</Link>
+            <Link to='/finery/shoes' className={classes.listItem}>SHOES</Link>
           </ListItem>
           <ListItem>
-            <Link to='/finery/accessories' style={{color:'black',textDecoration:'none'}}>accessories</Link>
+            <Link to='/finery/accessories' className={classes.listItem}>ACCESSORIES</Link>
           </ListItem>
         </List>
-        <Divider />
         <List>
           <ListItem>
-            <Link to='/finery' style={{color:'black',textDecoration:'none'}}>search</Link>
+            <Link to='/finery' className={classes.listItem}>SEARCH</Link>
           </ListItem>
           <ListItem>
-            <Link to='/finery' style={{color:'black',textDecoration:'none'}}>log in / sign up</Link>
+            <Link to='/finery' className={classes.listItem}>SIGN IN/UP</Link>
           </ListItem>
           <ListItem>
-            <Link to='/finery' style={{color:'black',textDecoration:'none'}}>cart</Link>
+            <Link to='/finery' className={classes.listItem}>CART</Link>
           </ListItem>
         </List>
       </Drawer>
     </div>
   );
 }
+
+export default Nav;

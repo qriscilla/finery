@@ -5,6 +5,7 @@ import Cashmere from '../../images/Cashmere.png';
 import Jacket from '../../images/Jacket.png';
 import Straight from '../../images/Straight.png';
 import Cheeky from '../../images/Cheeky.png';
+import Skirt from '../../images/Skirt.png';
 
 function Clothes() {
     return(
@@ -14,6 +15,7 @@ function Clothes() {
             <Grid item xs={6} md={4}><img src={Jacket} alt={Jacket} style={{width:'90%'}} /></Grid>   
             <Grid item xs={6} md={4}><img src={Straight} alt={Straight} style={{width:'90%'}} /></Grid>   
             <Grid item xs={6} md={4}><img src={Cheeky} alt={Cheeky} style={{width:'90%'}} /></Grid>   
+            <Grid item xs={6} md={4}><img src={Skirt} alt={Skirt} style={{width:'90%'}} /></Grid>   
         </Grid>
     );
 }
