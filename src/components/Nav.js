@@ -113,9 +113,9 @@ function Nav() {
             {/* Dashboard */}
             <Grid item container md={5} className={classes.noCollapse}>
             <ul className='menu'>
-              <li><Link to='/'>SEARCH</Link></li>
-              <li><Link to='/'>SIGN IN/UP</Link></li>
-              <li><Link to='/'>CART</Link></li>
+              <li><Link to='/finery/search'>SEARCH</Link></li>
+              <li><Link to='/finery/account'>SIGN IN/UP</Link></li>
+              <li><Link to='/finery/cart'>CART</Link></li>
             </ul> 
             </Grid>
           </Grid>
@@ -147,13 +147,13 @@ function Nav() {
         </List>
         <List>
           <ListItem>
-            <Link to='/finery' className={classes.listItem}>SEARCH</Link>
+            <Link to='/finery/search' className={classes.listItem}>SEARCH</Link>
           </ListItem>
           <ListItem>
-            <Link to='/finery' className={classes.listItem}>SIGN IN/UP</Link>
+            <Link to='/finery/account' className={classes.listItem}>SIGN IN/UP</Link>
           </ListItem>
           <ListItem>
-            <Link to='/finery' className={classes.listItem}>CART</Link>
+            <Link to='/finery/cart' className={classes.listItem}>CART</Link>
           </ListItem>
         </List>
       </Drawer>

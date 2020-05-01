@@ -7,6 +7,9 @@ import Home from './components/pages/Home';
 import Clothes from './components/pages/Clothes';
 import Shoes from './components/pages/Shoes';
 import Accessories from './components/pages/Accessories';
+import Search from './components/pages/Search';
+import Account from './components/pages/Account';
+import Cart from './components/pages/Cart';
 import Footer from './components/Footer';
 
 function App() {
@@ -22,6 +25,9 @@ function App() {
             <Route path='/finery/clothes' exact component={Clothes} />
             <Route path='/finery/shoes' exact component={Shoes} />
             <Route path='/finery/accessories' exact component={Accessories} />
+            <Route path='/finery/search' exact component={Search} />
+            <Route path='/finery/account' exact component={Account} />
+            <Route path='/finery/cart' exact component={Cart} />
           </Switch>              
         </Grid>
 
