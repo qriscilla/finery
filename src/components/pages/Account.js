@@ -12,7 +12,7 @@ const sign = {
     textAlign: 'center',
     marginBottom: '20px',
     fontWeight: 'bold',
-    fontSize: '15px'
+    fontSize: '15px',
 }
 const field = {
     marginBottom:'12px',
@@ -20,7 +20,7 @@ const field = {
     fontSize:'15px'
 }
 const fields = {
-    marginBottom: '12px',
+    marginBottom: '14px',
     fontWeight:'bold',
     fontSize:'15px',
     marginRight:'75px'
@@ -29,8 +29,9 @@ const input = {
     outline:'none',
     fontWeight:'bold',
     textTransform:'uppercase',
-    border:'2px solid black',
-    fontSize:'12px',
+    border:'none',
+    borderBottom:'2px solid black',
+    fontSize:'14px',
     letterSpacing:'0.1em',
     width:'200px',
     marginBottom:'8px'
@@ -73,6 +74,7 @@ function Account() {
 
             <Grid item container direction='column' justify='center' xs={12} md={6} className={classes.borderBottom}>
                 <span style={sign}>SIGN IN WITH AN EXISTING ACCOUNT</span>
+                
 
                 <Grid item container direction='row' justify='center' style={{marginLeft:'-20px'}}>
                     <Grid item>
