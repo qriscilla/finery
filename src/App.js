@@ -11,6 +11,7 @@ import Search from './components/pages/Search';
 import Account from './components/pages/Account';
 import Cart from './components/pages/Cart';
 import Footer from './components/Footer';
+import Item from './components/pages/Item';
 
 function App() {
   return (
@@ -22,12 +23,16 @@ function App() {
         <Grid item container justify='center' className='app__body'>
           <Switch>
             <Route path='/finery' exact component={Home} />
+
             <Route path='/finery/clothes' exact component={Clothes} />
             <Route path='/finery/shoes' exact component={Shoes} />
             <Route path='/finery/accessories' exact component={Accessories} />
+
             <Route path='/finery/search' exact component={Search} />
             <Route path='/finery/account' exact component={Account} />
             <Route path='/finery/cart' exact component={Cart} />
+            
+            <Route path='/finery/products' component={Item} />
           </Switch>              
         </Grid>
 

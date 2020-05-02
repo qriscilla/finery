@@ -96,6 +96,7 @@ function Nav() {
                   <ul className='dropdown'>
                       <Link to='/finery/shoes/boots'><li className='dropdownLinks'>BOOTS</li></Link>
                       <Link to='/finery/shoes/heels'><li className='dropdownLinks'>HEELS</li></Link>
+                      <Link to='/finery/shoes/sneakers'><li className='dropdownLinks'>SNEAKERS</li></Link>
                   </ul>
                 </li>
                 <li className='accessories'>

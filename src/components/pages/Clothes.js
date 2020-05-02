@@ -1,23 +1,53 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { Link, withRouter } from 'react-router-dom';
 import Grid from '@material-ui/core/Grid';
-import Turtleneck from '../../images/Turtleneck.png';
-import Cashmere from '../../images/Cashmere.png';
-import Jacket from '../../images/Jacket.png';
-import Straight from '../../images/Straight.png';
-import Cheeky from '../../images/Cheeky.png';
-import Skirt from '../../images/Skirt.png';
 
-function Clothes() {
-    return(
-        <Grid container style={{textAlign:'center'}}>
-            <Grid item xs={6} md={4}><img src={Cashmere} alt={Cashmere} style={{width:'90%'}} /></Grid>
-            <Grid item xs={6} md={4}><img src={Turtleneck} alt={Turtleneck} style={{width:'90%'}} /></Grid>
-            <Grid item xs={6} md={4}><img src={Jacket} alt={Jacket} style={{width:'90%'}} /></Grid>   
-            <Grid item xs={6} md={4}><img src={Straight} alt={Straight} style={{width:'90%'}} /></Grid>   
-            <Grid item xs={6} md={4}><img src={Cheeky} alt={Cheeky} style={{width:'90%'}} /></Grid>   
-            <Grid item xs={6} md={4}><img src={Skirt} alt={Skirt} style={{width:'90%'}} /></Grid>   
-        </Grid>
-    );
+const mapStateToProps = (state) => {
+    return {
+        items: state.items
+    };
+}
+const categoryP = {
+    textTransform: 'uppercase',
+    fontSize: '0.9em',
+    fontWeight: 'bold',
+    marginTop: '-20px',
+    color: 'white'
+}
+const categorySpan = {
+    backgroundColor: 'black'
 }
 
-export default Clothes;
+class Clothes extends React.Component {
+    render() {
+        let itemList = this.props.items.map((item) => {
+            if (item.category === 'clothes') {
+                return (
+                    <Grid item xs={6} md={4} key={item.id}>
+                        <Link
+                            to = {{
+                                pathname: `/finery/products/${item.category}`,
+                                search: `?id=${item.id}`,
+                            }}>
+                            <img src={item.img} alt={item.title} style={{width:'90%'}} />
+                        </Link>
+                        <div>
+                            <p style={categoryP}><span style={categorySpan}>{item.title}</span></p>    
+                        </div>                            
+                    </Grid>                                       
+                )
+            } else {
+                return null;
+            }
+        })
+
+        return (
+            <Grid container style={{textAlign:'center'}}>
+            {itemList}
+                </Grid>
+        );
+    }
+}
+
+export default connect(mapStateToProps)(withRouter(Clothes));
