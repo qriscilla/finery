@@ -21,9 +21,8 @@ const categorySpan = {
 
 class Clothes extends React.Component {
     render() {
-        
         let itemList = this.props.items.map((item) => {
-            if (item.category === 'clothes') {
+            if (item.subcat === 'bags') {
                 return (
                     <Grid item xs={6} md={4} key={item.id}>
                         <Link

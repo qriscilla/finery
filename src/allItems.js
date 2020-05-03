@@ -8,7 +8,7 @@ import Form from './images/Form.png';
 import Heel from './images/Heel.png';
 import Jacket from './images/Jacket.png';
 import Mini from './images/Mini.png';
-import Rain from './images/ReKnit.png';
+import Rain from './images/Rain.png';
 import ReKnit from './images/ReKnit.png';
 import Sandal from './images/Sandal.png';
 import Skirt from './images/Skirt.png';
