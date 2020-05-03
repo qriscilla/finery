@@ -44,6 +44,19 @@ function Nav() {
       "&:focus": {
         backgroundImage: 'linear-gradient(180deg,transparent 50%,hsla(0,0%,77.3%,.5) 0)'
       },
+    },
+    listItems: {
+      marginLeft:'30px',
+      color:'black',
+      textDecoration:'none',
+      fontWeight:'bold',
+      fontSize:'12px',
+      "&:hover": {
+        backgroundImage: 'linear-gradient(180deg,transparent 50%,hsla(0,0%,77.3%,.5) 0)'
+      },
+      "&:focus": {
+        backgroundImage: 'linear-gradient(180deg,transparent 50%,hsla(0,0%,77.3%,.5) 0)'
+      },
     }
   }));
 
@@ -136,26 +149,25 @@ function Nav() {
         </Grid>
 
         <List>
-          <ListItem>
-            <Link to='/finery/clothes' className={classes.listItem}>CLOTHES</Link>
-          </ListItem>
-          <ListItem>
-            <Link to='/finery/shoes' className={classes.listItem}>SHOES</Link>
-          </ListItem>
-          <ListItem>
-            <Link to='/finery/accessories' className={classes.listItem}>ACCESSORIES</Link>
-          </ListItem>
+          <ListItem><Link to='/finery/clothes' className={classes.listItem}>CLOTHES</Link></ListItem>
+          <ListItem><Link to='/finery/clothes/tops' className={classes.listItems}>tops</Link></ListItem>
+          <ListItem><Link to='/finery/clothes/bottoms' className={classes.listItems}>bottoms</Link></ListItem>
+          <ListItem><Link to='/finery/clothes/outer' className={classes.listItems}>outer</Link></ListItem>
         </List>
         <List>
-          <ListItem>
-            <Link to='/finery/search' className={classes.listItem}>SEARCH</Link>
-          </ListItem>
-          <ListItem>
-            <Link to='/finery/account' className={classes.listItem}>SIGN IN/UP</Link>
-          </ListItem>
-          <ListItem>
-            <Link to='/finery/cart' className={classes.listItem}>CART</Link>
-          </ListItem>
+          <ListItem><Link to='/finery/shoes' className={classes.listItem}>SHOES</Link></ListItem>
+          <ListItem><Link to='/finery/shoes/boots' className={classes.listItems}>boots</Link></ListItem>
+          <ListItem><Link to='/finery/shoes/heels' className={classes.listItems}>heels</Link></ListItem>
+          <ListItem><Link to='/finery/shoes/sneakers' className={classes.listItems}>sneakers</Link></ListItem>
+        </List>
+        <List>
+          <ListItem><Link to='/finery/accessories' className={classes.listItem}>ACCESSORIES</Link></ListItem>
+          <ListItem><Link to='/finery/accessories/bags' className={classes.listItems}>bags</Link></ListItem>
+        </List>
+        <List>
+          <ListItem><Link to='/finery/search' className={classes.listItem}>SEARCH</Link></ListItem>
+          <ListItem><Link to='/finery/account' className={classes.listItem}>SIGN IN/UP</Link></ListItem>
+          <ListItem><Link to='/finery/cart' className={classes.listItem}>CART</Link></ListItem>
         </List>
       </Drawer>
     </div>

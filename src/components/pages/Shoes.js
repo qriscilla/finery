@@ -10,13 +10,13 @@ const mapStateToProps = (state) => {
 }
 const categoryP = {
     textTransform: 'uppercase',
-    fontSize: '0.9em',
+    fontSize: '0.8em',
     fontWeight: 'bold',
     marginTop: '-20px',
-    color: 'white'
+    color: 'black'
 }
 const categorySpan = {
-    backgroundColor: 'black'
+    backgroundImage: 'linear-gradient(180deg,transparent 50%,hsla(0,0%,77.3%,.5) 0)'
 }
 
 class Clothes extends React.Component {

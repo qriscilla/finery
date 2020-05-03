@@ -45,6 +45,7 @@ class Item extends React.Component {
     
     handleAddToCart = (id) => {
         this.props.dispatch(addItem(id));
+        alert('Item added to cart');
     }
 
     render() {
@@ -63,7 +64,10 @@ class Item extends React.Component {
                     <p>{item.desc}</p>
                     <div>
                         <Link 
-                            to="/cart"
+                            to = {{
+                                pathname: `/finery/products/${item.category}`,
+                                search: `?id=${item.id}`,
+                            }}
                             onClick={ () => { 
                                 this.handleAddToCart(item.id);
                             }}
