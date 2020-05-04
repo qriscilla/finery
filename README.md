@@ -9,6 +9,6 @@ FINERY is a mock-up e-commerce storefront I built to learn and practice using Re
 - Redux and Redux Persist for managing states
 
 ## Demo
-To see the live website with the latest deployed code, go to https://qriscilla.github.io/finery/
+To see the live website with the latest deployed code, click <a href="https://qriscilla.github.io/finery/" target="new">HERE</a>.
 
-<a href="https://gifyu.com/image/lXyk"><img src="https://s6.gifyu.com/images/ezgif.com-video-to-gif8fc8fab0c3cde5ac.gif" alt="ezgif.com-video-to-gif8fc8fab0c3cde5ac.gif" border="0" /></a>
+<img src="https://s6.gifyu.com/images/ezgif.com-video-to-gif8fc8fab0c3cde5ac.gif" alt="ezgif.com-video-to-gif8fc8fab0c3cde5ac.gif" border="0" />
