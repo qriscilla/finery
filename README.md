@@ -7,3 +7,8 @@ FINERY is a mock-up e-commerce storefront I built to learn and practice using Re
 ## Stack
 React and Material UI for the front-end
 Redux and Redux Persist to manage states
+
+## Demo
+To see the live website with the latest deployed code, go to https://qriscilla.github.io/finery/
+
+<a href="https://gifyu.com/image/lXyk"><img src="https://s6.gifyu.com/images/ezgif.com-video-to-gif8fc8fab0c3cde5ac.gif" alt="ezgif.com-video-to-gif8fc8fab0c3cde5ac.gif" border="0" /></a>
